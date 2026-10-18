@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Chúc Mừng 20/10 Các Bạn Nữ Lớp 12A8 - Trường THPT Lý Thường Kiệt 💐</title>
+  <title>Chúc Mừng 20/10 Các Bạn Nữ Trường THPT Lý Thường Kiệt 💐</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts -->
@@ -113,95 +113,9 @@
 
     .letter-scroll::-webkit-scrollbar { width: 4px; }
     .letter-scroll::-webkit-scrollbar-thumb { background: rgba(180, 135, 90, 0.45); border-radius: 9999px; }
-
-    /* Royal 12A8 Wax Seal */
-    .wax-seal {
-      width: 46px;
-      height: 46px;
-      border-radius: 9999px;
-      background: radial-gradient(circle at 35% 32%, #ef4444 0%, #b91c1c 55%, #7f1d1d 100%);
-      box-shadow:
-        0 4px 14px rgba(0, 0, 0, 0.5),
-        inset 0 2px 3px rgba(255, 255, 255, 0.45),
-        inset 0 -2px 4px rgba(0, 0, 0, 0.65);
-      border: 2px solid #facc15;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #fef08a;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
-      position: absolute;
-    }
-
-    /* Vinyl Disc Music Player */
-    .vinyl-disc {
-      animation: spinVinyl 5s linear infinite;
-    }
-    .vinyl-disc.paused {
-      animation-play-state: paused;
-    }
-    @keyframes spinVinyl {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    .music-note {
-      position: absolute;
-      animation: floatMusicNote 2.4s ease-out infinite;
-      opacity: 0;
-      pointer-events: none;
-    }
-    @keyframes floatMusicNote {
-      0% { transform: translateY(0) scale(0.6); opacity: 0; }
-      30% { opacity: 0.95; }
-      100% { transform: translateY(-36px) scale(1.15); opacity: 0; }
-    }
-
-    /* Interactive Lucky Stars in Sky */
-    .lucky-star-btn {
-      position: absolute;
-      z-index: 45;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-      animation: starGlowPulse 2.6s ease-in-out infinite;
-    }
-    .lucky-star-btn:hover {
-      transform: scale(1.25) !important;
-      filter: drop-shadow(0 0 16px rgba(254, 240, 138, 1)) !important;
-    }
-    @keyframes starGlowPulse {
-      0%, 100% { filter: drop-shadow(0 0 6px rgba(253, 224, 71, 0.65)); opacity: 0.85; transform: scale(1); }
-      50% { filter: drop-shadow(0 0 18px rgba(254, 240, 138, 1)); opacity: 1; transform: scale(1.08); }
-    }
   </style>
 </head>
 <body class="relative w-full h-full overflow-hidden select-none">
-
-  <!-- FLOATING VINYL MUSIC CONTROLLER -->
-  <div class="fixed top-4 right-4 z-50 flex items-center gap-2">
-    <button id="btnMusicToggle"
-      class="group relative w-12 h-12 rounded-full flex items-center justify-center bg-slate-900/65 backdrop-blur-md border border-amber-300/40 shadow-[0_0_20px_rgba(251,191,36,0.35)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
-      title="Bật / Tắt Nhạc 20/10">
-      <!-- Vinyl disc inside -->
-      <div id="vinylDisc" class="vinyl-disc w-9 h-9 rounded-full bg-neutral-900 border border-neutral-700 flex items-center justify-center shadow-inner paused">
-        <!-- Vinyl groove rings -->
-        <div class="w-6 h-6 rounded-full border border-neutral-800 flex items-center justify-center">
-          <div class="w-3 h-3 rounded-full bg-rose-500/80 flex items-center justify-center">
-            <div class="w-1 h-1 rounded-full bg-amber-200"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Music notes floating -->
-      <span class="music-note text-amber-300 text-xs font-bold" style="left: -4px;">♪</span>
-      <span class="music-note text-rose-300 text-xs font-bold" style="right: -4px; animation-delay: 1.2s;">♫</span>
-    </button>
-  </div>
 
   <!-- 1. BACKGROUND CANVAS (Night Sky, Stars, Hills, Bouquet & Fireflies) -->
   <canvas id="sceneCanvas" class="fixed inset-0 w-full h-full z-0 pointer-events-none"></canvas>
@@ -248,20 +162,18 @@
     role="button"
     tabindex="0"
     aria-label="Mở thư chúc mừng 20/10"
-    class="envelope-card fixed z-[150] opacity-0 pointer-events-none w-[285px] sm:w-[340px] rounded-2xl px-5 py-4 text-center cursor-pointer"
+    class="envelope-card fixed z-[150] opacity-0 pointer-events-none w-[275px] sm:w-[330px] rounded-2xl px-5 py-3.5 text-center cursor-pointer"
     style="top: 56%; left: 50%; transform: translate(-50%, -50%) scale(0.65) rotate(-1.5deg);">
 
-    <!-- Royal 12A8 Wax Seal Badge -->
-    <div class="wax-seal -top-4 -right-4 z-30 pointer-events-none animate-bounce shadow-xl">
-      <span class="text-[8px] uppercase tracking-tighter text-amber-200/90 leading-none">THPT LTK</span>
-      <span class="text-xs font-black tracking-widest text-amber-300 leading-tight">12A8</span>
+    <!-- Red Heart Seal Badge -->
+    <div class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-rose-500 text-white flex items-center justify-center shadow-md border-2 border-white animate-bounce pointer-events-none">
+      <span class="text-xs">❤</span>
     </div>
 
     <div class="border-b border-dashed border-[#d4b288] pb-1.5 mb-1.5 pointer-events-none">
       <h3 class="font-cursive text-2xl sm:text-[28px] font-bold text-[#4d321e] leading-tight">
-        Gửi các bạn nữ <span class="text-rose-500">12A8</span>
+        Gửi các bạn nữ <span class="text-rose-500">Trường LTK</span>
       </h3>
-      <p class="text-[11px] sm:text-xs text-[#7c5332] font-semibold tracking-wide">Trường THPT Lý Thường Kiệt</p>
     </div>
 
     <p class="font-cursive text-base sm:text-lg text-[#6e4c32] pointer-events-none flex items-center justify-center gap-1">
@@ -278,10 +190,9 @@
     <div id="vintageLetterModal"
       class="vintage-letter-modal relative w-[92vw] max-w-[395px] sm:max-w-[430px] transform scale-75 transition-transform duration-500 mt-3 sm:mt-5">
 
-      <!-- Top-Right Royal Wax Seal Badge -->
-      <div class="wax-seal -top-3 -right-3 z-30 shadow-xl pointer-events-none">
-        <span class="text-[8px] uppercase tracking-tighter text-amber-200/90 leading-none">THPT LTK</span>
-        <span class="text-xs font-black tracking-widest text-amber-300 leading-tight">12A8</span>
+      <!-- Top-Right Red Heart Badge -->
+      <div class="absolute -top-2.5 -right-2.5 z-30 w-8 h-8 rounded-full bg-rose-500 text-white flex items-center justify-center shadow-lg border-2 border-[#fff9f0]">
+        <span class="text-xs">❤</span>
       </div>
 
       <div class="vintage-letter-paper relative px-6 py-6 sm:px-8 sm:py-7 max-h-[68vh] overflow-y-auto letter-scroll">
@@ -293,8 +204,7 @@
 
         <!-- Greeting Header -->
         <h2 id="letterHeading" class="font-cursive text-2xl sm:text-[28px] font-bold text-center text-[#4a301d] mb-3 leading-snug">
-          Gửi các bạn nữ <span class="text-rose-500">12A8</span> xinh đẹp!<br>
-          <span class="text-base sm:text-lg font-normal text-[#7c5332]">Trường THPT Lý Thường Kiệt</span>
+          Gửi các bạn nữ <span class="text-rose-500">Trường THPT Lý Thường Kiệt</span> xinh đẹp!
         </h2>
 
         <!-- Typewriter Body Paragraphs -->
@@ -312,39 +222,19 @@
     </div>
   </div>
 
-  <!-- 6. INTERACTIVE LUCKY STARS IN SKY -->
-  <div id="luckyStarsContainer" class="fixed inset-0 pointer-events-none z-35 transition-opacity duration-1000 opacity-0">
-  </div>
-
-  <!-- 7. STAR WISH MODAL -->
-  <div id="starWishModal" class="fixed inset-0 z-[180] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
-    <div id="starWishCard" class="relative w-[92vw] max-w-[370px] rounded-2xl p-6 text-center transform scale-90 transition-all duration-300"
-      style="background: linear-gradient(135deg, rgba(8, 16, 42, 0.94) 0%, rgba(28, 14, 46, 0.96) 100%);
-             backdrop-filter: blur(16px);
-             -webkit-backdrop-filter: blur(16px);
-             border: 1.5px solid rgba(254, 240, 138, 0.45);
-             box-shadow: 0 20px 48px rgba(0,0,0,0.7), 0 0 32px rgba(234, 179, 8, 0.3);">
-      <button id="btnCloseStarWish" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-sky-200 flex items-center justify-center text-sm transition cursor-pointer">✕</button>
-      <div id="starWishIcon" class="text-4xl mb-2 drop-shadow-[0_0_12px_rgba(253,224,71,0.8)]">⭐</div>
-      <h3 id="starWishTitle" class="font-cursive text-2xl sm:text-3xl font-bold text-amber-200 mb-2">Lời Chúc 12A8</h3>
-      <p id="starWishText" class="font-cursive text-lg sm:text-[21px] text-sky-100 leading-relaxed"></p>
-    </div>
-  </div>
-
   <script>
     /*************************************************************************
-     * 1. 20/10 LETTER CONTENT FOR CLASS 12A8 - TRƯỜNG THPT LÝ THƯỜNG KIỆT
+     * 1. 20/10 LETTER CONTENT FOR TRUONG THPT LY THUONG KIET
      *************************************************************************/
-    const letterTitleHTML = 'Gửi các bạn nữ <span class="text-rose-500">12A8</span> xinh đẹp!<br><span class="text-base sm:text-lg font-normal text-[#7c5332]">Trường THPT Lý Thường Kiệt</span>';
+    const letterTitleHTML = 'Gửi các bạn nữ <span class="text-rose-500">Trường THPT Lý Thường Kiệt</span> xinh đẹp!';
     const letterParagraphs = [
-      "Nhân ngày Phụ nữ Việt Nam 20/10, chúc một nửa thế giới của tập thể 12A8 - Trường THPT Lý Thường Kiệt luôn rạng rỡ, kiêu hãnh và ngọt ngào như những đóa hoa Tulip dưới bầu trời đêm ngàn sao.",
-      "Năm học lớp 12 cuối cấp là dấu mốc thanh xuân tuổi 18 thật đặc biệt và đáng nhớ. Cảm ơn các bạn vì đã luôn mang đến tiếng cười, sự dịu dàng và những kỷ niệm vô giá trong từng tiết học dưới mái trường thân thương.",
-      "Chúc các nàng thơ 12A8 luôn tự tin, ngập tràn may mắn, đạt kết quả thật xuất sắc trong kỳ thi THPT Quốc Gia sắp tới và chạm tay vào cánh cổng trường Đại học mơ ước!",
-      "Dù mai này mỗi người một phương trời, 12A8 Lý Thường Kiệt sẽ mãi là gia đình, là thanh xuân đẹp đẽ nhất của chúng mình! ✨💐"
+      "Nhân ngày Phụ nữ Việt Nam 20/10, chúc toàn thể các bạn nữ trường THPT Lý Thường Kiệt luôn rạng rỡ, xinh đẹp và tỏa sáng như những đóa hoa Tulip dưới bầu trời đêm ngàn sao.",
+      "Cảm ơn các bạn vì đã luôn mang đến tiếng cười, sự dịu dàng và nguồn năng lượng tích cực, làm cho mỗi ngày đến trường đều trở nên thật ý nghĩa.",
+      "Chúc các bạn nữ trường LTK luôn vui vẻ, học giỏi, ngập tràn hạnh phúc và có thật nhiều kỷ niệm thanh xuân tuyệt đẹp dưới mái trường Lý Thường Kiệt thân yêu!"
     ];
 
     /*************************************************************************
-     * 2. AUDIO SYNTHESIZER & CONTROLLER
+     * 2. AUDIO SYNTHESIZER
      *************************************************************************/
     let audioCtx = null;
     let isMusicPlaying = false;
@@ -415,22 +305,8 @@
       });
     }
 
-    function toggleMusic() {
-      ensureAudio();
-      const disc = document.getElementById('vinylDisc');
-      if (isMusicPlaying) {
-        isMusicPlaying = false;
-        if (melodyTimer) clearInterval(melodyTimer);
-        if (disc) disc.classList.add('paused');
-      } else {
-        startMusic();
-      }
-    }
-
     function startMusic() {
       ensureAudio();
-      const disc = document.getElementById('vinylDisc');
-      if (disc) disc.classList.remove('paused');
       if (isMusicPlaying) return;
       isMusicPlaying = true;
       melodyTimer = setInterval(() => {
@@ -442,91 +318,6 @@
         });
         noteIndex++;
       }, 670);
-    }
-
-    /*************************************************************************
-     * 3. LUCKY STAR WISHES FOR 12A8
-     *************************************************************************/
-    const STAR_WISHES = [
-      {
-        id: 'star-1',
-        icon: '🎓',
-        title: 'Ngôi Sao Thủ Khoa',
-        text: 'Chúc các bạn nữ 12A8 đạt điểm số xuất sắc, tự tin bứt phá mọi nguyện vọng và bước vào cánh cổng trường Đại học mơ ước với niềm kiêu hãnh rạng ngời!',
-        left: '13%',
-        top: '24%'
-      },
-      {
-        id: 'star-2',
-        icon: '🌸',
-        title: 'Ngôi Sao Nàng Thơ',
-        text: 'Chúc những đóa hoa của THPT Lý Thường Kiệt luôn nở rộ nụ cười, dịu dàng, tự tin và mãi là phiên bản rực rỡ, hạnh phúc nhất của chính mình!',
-        left: '77%',
-        top: '28%'
-      },
-      {
-        id: 'star-3',
-        icon: '💖',
-        title: 'Ngôi Sao Tri Kỷ',
-        text: 'Cảm ơn vì đã cùng nhau đi qua 1000 ngày áo trắng ngập tràn kỷ niệm. Dù mai này khôn lớn bay xa, tập thể 12A8 sẽ mãi là nơi lưu giữ thanh xuân đẹp nhất!',
-        left: '11%',
-        top: '48%'
-      },
-      {
-        id: 'star-4',
-        icon: '🍀',
-        title: 'Ngôi Sao May Mắn',
-        text: 'Chúc cho mọi ước mơ tuổi 18 của các cô gái 12A8 đều được vũ trụ đón nhận, vạn dặm đường sau này đều ngập tràn niềm vui, may mắn và bình an!',
-        left: '81%',
-        top: '48%'
-      }
-    ];
-
-    function initLuckyStars() {
-      const container = document.getElementById('luckyStarsContainer');
-      if (!container) return;
-      container.innerHTML = '';
-      STAR_WISHES.forEach(star => {
-        const btn = document.createElement('button');
-        btn.className = 'lucky-star-btn';
-        btn.style.left = star.left;
-        btn.style.top = star.top;
-        btn.setAttribute('aria-label', star.title);
-        btn.innerHTML = `
-          <div class="relative flex items-center justify-center w-11 h-11 rounded-full bg-slate-900/65 backdrop-blur-md border border-amber-300/60 shadow-[0_0_14px_rgba(254,240,138,0.7)] hover:border-amber-200">
-            <span class="text-xl drop-shadow-[0_0_6px_rgba(253,224,71,0.9)]">${star.icon}</span>
-          </div>
-          <span class="mt-1 font-cursive text-xs sm:text-sm font-semibold text-amber-200 drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)] whitespace-nowrap">${star.title}</span>
-        `;
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          openStarWish(star);
-        });
-        container.appendChild(btn);
-      });
-    }
-
-    function openStarWish(star) {
-      playSparkleChime();
-      spawnSparkleBurst(W * 0.5, H * 0.45, 30);
-      document.getElementById('starWishIcon').textContent = star.icon;
-      document.getElementById('starWishTitle').textContent = `${star.title} ✨`;
-      document.getElementById('starWishText').textContent = star.text;
-      const modal = document.getElementById('starWishModal');
-      const card = document.getElementById('starWishCard');
-      modal.classList.remove('opacity-0', 'pointer-events-none');
-      modal.classList.add('opacity-100', 'pointer-events-auto');
-      card.classList.remove('scale-90');
-      card.classList.add('scale-100');
-    }
-
-    function closeStarWish() {
-      const modal = document.getElementById('starWishModal');
-      const card = document.getElementById('starWishCard');
-      modal.classList.remove('opacity-100', 'pointer-events-auto');
-      modal.classList.add('opacity-0', 'pointer-events-none');
-      card.classList.remove('scale-100');
-      card.classList.add('scale-90');
     }
 
     /*************************************************************************
@@ -554,155 +345,6 @@
     const grassBlades = [];
     const fireflies = [];
     const sparkles = [];
-    const fallingPetals = [];
-
-    const FAIRY_LIGHTS = [
-      { x: -55, y: -220, phase: 0.1, size: 3.5 },
-      { x: -20, y: -245, phase: 1.4, size: 4.0 },
-      { x:  25, y: -238, phase: 2.7, size: 3.8 },
-      { x:  60, y: -210, phase: 4.1, size: 4.2 },
-      { x: -80, y: -180, phase: 0.8, size: 3.6 },
-      { x: -40, y: -160, phase: 3.2, size: 4.0 },
-      { x:   5, y: -175, phase: 5.0, size: 4.5 },
-      { x:  50, y: -155, phase: 1.9, size: 3.8 },
-      { x:  85, y: -175, phase: 3.8, size: 4.0 },
-      { x: -95, y: -130, phase: 2.2, size: 3.7 },
-      { x: -25, y: -110, phase: 0.5, size: 4.2 },
-      { x:  30, y: -115, phase: 4.6, size: 4.0 },
-      { x:  95, y: -125, phase: 1.1, size: 3.6 },
-      { x: -15, y:  -60, phase: 2.9, size: 4.2 },
-      { x:  20, y:  -55, phase: 5.5, size: 3.9 }
-    ];
-
-    function drawCrescentMoon(ctx, time) {
-      const moonX = Math.min(W - 130, W * 0.81);
-      const moonY = Math.min(105, Math.max(68, H * 0.12));
-      const r = Math.min(32, Math.max(22, W * 0.038));
-
-      // Outer moon aura glow
-      const aura = ctx.createRadialGradient(moonX, moonY, r * 0.6, moonX, moonY, r * 3.4);
-      aura.addColorStop(0, 'rgba(254, 240, 138, 0.28)');
-      aura.addColorStop(0.4, 'rgba(253, 224, 71, 0.10)');
-      aura.addColorStop(1, 'rgba(253, 224, 71, 0)');
-      ctx.fillStyle = aura;
-      ctx.beginPath();
-      ctx.arc(moonX, moonY, r * 3.4, 0, Math.PI * 2);
-      ctx.fill();
-
-      // Crescent Moon
-      ctx.save();
-      ctx.translate(moonX, moonY);
-      ctx.rotate(-0.32);
-
-      const moonGrad = ctx.createLinearGradient(-r, -r, r, r);
-      moonGrad.addColorStop(0, '#fffef0');
-      moonGrad.addColorStop(0.5, '#fef3c7');
-      moonGrad.addColorStop(1, '#fde68a');
-
-      ctx.fillStyle = moonGrad;
-      ctx.shadowColor = '#fde047';
-      ctx.shadowBlur = 12;
-      ctx.beginPath();
-      ctx.arc(0, 0, r, 0, Math.PI * 2, false);
-      ctx.fill();
-
-      // Cutout to leave crescent
-      ctx.globalCompositeOperation = 'destination-out';
-      ctx.beginPath();
-      ctx.arc(r * 0.45, -r * 0.08, r * 0.88, 0, Math.PI * 2, false);
-      ctx.fill();
-
-      ctx.restore();
-    }
-
-    function drawFairyLights(ctx, time, elapsed) {
-      const lightAlpha = clamp01((elapsed - 1.8) / 0.85);
-      if (lightAlpha <= 0) return;
-
-      ctx.save();
-      ctx.globalAlpha = lightAlpha;
-
-      // Wire connecting bulbs
-      ctx.strokeStyle = 'rgba(254, 240, 138, 0.42)';
-      ctx.lineWidth = 1.1;
-      ctx.beginPath();
-      for (let i = 0; i < FAIRY_LIGHTS.length; i++) {
-        const fl = FAIRY_LIGHTS[i];
-        const sx = fl.x + Math.sin(time * 0.002 + fl.phase) * 3;
-        if (i === 0) ctx.moveTo(sx, fl.y);
-        else ctx.lineTo(sx, fl.y);
-      }
-      ctx.stroke();
-
-      // Glowing LED orbs
-      FAIRY_LIGHTS.forEach(fl => {
-        const pulse = 0.5 + 0.5 * Math.sin(time * 0.0035 + fl.phase);
-        const sx = fl.x + Math.sin(time * 0.002 + fl.phase) * 3;
-        ctx.save();
-        ctx.shadowColor = '#fde047';
-        ctx.shadowBlur = 12 + 10 * pulse;
-        ctx.fillStyle = `rgba(255, 253, 220, ${0.75 + 0.25 * pulse})`;
-        ctx.beginPath();
-        ctx.arc(sx, fl.y, fl.size * (0.85 + 0.25 * pulse), 0, Math.PI * 2);
-        ctx.fill();
-
-        // Inner white spark
-        ctx.fillStyle = '#ffffff';
-        ctx.beginPath();
-        ctx.arc(sx, fl.y, fl.size * 0.45, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.restore();
-      });
-
-      ctx.restore();
-    }
-
-    function updateAndDrawPetals(ctx, time) {
-      if (appState === 'HOLD') return;
-
-      if (fallingPetals.length < 22 && Math.random() < 0.045) {
-        fallingPetals.push({
-          x: Math.random() * W,
-          y: -20,
-          vx: (Math.random() - 0.5) * 0.55,
-          vy: Math.random() * 0.75 + 0.55,
-          size: Math.random() * 9 + 8,
-          angle: Math.random() * Math.PI * 2,
-          angleSpeed: (Math.random() - 0.5) * 0.02,
-          swayPhase: Math.random() * Math.PI * 2,
-          swaySpeed: Math.random() * 0.002 + 0.0012,
-          alpha: Math.random() * 0.35 + 0.55,
-          color: Math.random() > 0.45 ? '#f472b6' : '#fb7185'
-        });
-      }
-
-      for (let i = fallingPetals.length - 1; i >= 0; i--) {
-        const p = fallingPetals[i];
-        p.x += p.vx + Math.sin(time * p.swaySpeed + p.swayPhase) * 0.6;
-        p.y += p.vy;
-        p.angle += p.angleSpeed;
-
-        if (p.y > H + 30) {
-          fallingPetals.splice(i, 1);
-          continue;
-        }
-
-        ctx.save();
-        ctx.translate(p.x, p.y);
-        ctx.rotate(p.angle);
-        ctx.scale(Math.cos(time * 0.0022 + p.swayPhase), 1);
-        ctx.globalAlpha = p.alpha;
-        ctx.fillStyle = p.color;
-        ctx.shadowColor = 'rgba(244, 114, 182, 0.45)';
-        ctx.shadowBlur = 6;
-        ctx.beginPath();
-        ctx.moveTo(0, -p.size);
-        ctx.bezierCurveTo(-p.size * 0.8, -p.size * 0.4, -p.size * 0.6, p.size * 0.75, 0, p.size);
-        ctx.bezierCurveTo(p.size * 0.6, p.size * 0.75, p.size * 0.8, -p.size * 0.4, 0, -p.size);
-        ctx.fill();
-        ctx.restore();
-      }
-    }
 
     const TULIP_DEFS = [
       { id: 0, tx: -34, ty: -236, bx: -6,  angle: -0.09, scale: 0.98, stemStart: 0.08, bloomStart: 0.80, layer: 1, phase: 0.4 },
@@ -1171,8 +813,6 @@
         ctx.restore();
       });
 
-      drawFairyLights(ctx, time, elapsed);
-
       if (kraftAlpha > 0) {
         ctx.save();
         ctx.globalAlpha = kraftAlpha;
@@ -1345,19 +985,6 @@
       ctx.fillStyle = skyGrad;
       ctx.fillRect(0, 0, W, H);
 
-      // Cosmic Aurora Nebula Dust
-      const nebAlpha = 0.08 + 0.03 * Math.sin(time * 0.001);
-      const nebGrad = ctx.createRadialGradient(W * 0.35, H * 0.28, 20, W * 0.35, H * 0.28, Math.max(W * 0.6, 320));
-      nebGrad.addColorStop(0, `rgba(168, 85, 247, ${nebAlpha * 1.3})`);
-      nebGrad.addColorStop(0.42, `rgba(244, 114, 182, ${nebAlpha * 0.9})`);
-      nebGrad.addColorStop(0.75, `rgba(56, 189, 248, ${nebAlpha * 0.45})`);
-      nebGrad.addColorStop(1, 'rgba(4, 7, 22, 0)');
-      ctx.fillStyle = nebGrad;
-      ctx.fillRect(0, 0, W, H * 0.72);
-
-      // Glowing Crescent Moon
-      drawCrescentMoon(ctx, time);
-
       for (const s of stars) {
         const tw = 0.35 + 0.65 * (0.5 + 0.5 * Math.sin(time * s.speed + s.phase));
         ctx.fillStyle = `rgba(235, 245, 255, ${s.alpha * tw})`;
@@ -1519,8 +1146,6 @@
         ctx.restore();
       }
 
-      updateAndDrawPetals(ctx, time);
-
       requestAnimationFrame(animate);
     }
 
@@ -1619,12 +1244,6 @@
       envelopeCard.classList.remove('opacity-0', 'pointer-events-none');
       envelopeCard.classList.add('opacity-100', 'pointer-events-auto');
       envelopeCard.style.transform = 'translate(-50%, -50%) scale(1) rotate(-1.5deg)';
-
-      const starsContainer = document.getElementById('luckyStarsContainer');
-      if (starsContainer) {
-        starsContainer.classList.remove('opacity-0', 'pointer-events-none');
-        starsContainer.classList.add('opacity-100', 'pointer-events-auto');
-      }
     }
 
     function openVintageLetter(e) {
@@ -1675,20 +1294,6 @@
           typewriterTimer = setTimeout(typeStep, 20);
         }
       }
-
-      letterBody.onclick = () => {
-        if (pIdx < letterParagraphs.length) {
-          if (typewriterTimer) clearTimeout(typewriterTimer);
-          letterBody.innerHTML = '';
-          letterParagraphs.forEach(t => {
-            const p = document.createElement('p');
-            p.textContent = t;
-            letterBody.appendChild(p);
-          });
-          pIdx = letterParagraphs.length;
-        }
-      };
-
       typeStep();
     }
 
@@ -1696,40 +1301,24 @@
       if (e) e.stopPropagation();
       if (typewriterTimer) clearTimeout(typewriterTimer);
       playSparkleChime();
-      spawnSparkleBurst(W * 0.5, H * 0.52, 45);
+      spawnSparkleBurst(W * 0.5, H * 0.52, 35);
 
       letterBackdrop.classList.remove('opacity-100', 'pointer-events-auto');
       letterBackdrop.classList.add('opacity-0', 'pointer-events-none');
       vintageLetterModal.classList.remove('scale-100');
       vintageLetterModal.classList.add('scale-75');
 
-      // Ẩn phong thư nhỏ trên bó hoa khi bấm đóng thư
+      // Ẩn hoàn toàn phong thư nhỏ trên bó hoa khi bấm đóng thư
       envelopeCard.classList.remove('opacity-100', 'pointer-events-auto');
       envelopeCard.classList.add('opacity-0', 'pointer-events-none');
       envelopeCard.style.display = 'none';
-
-      const starsContainer = document.getElementById('luckyStarsContainer');
-      if (starsContainer) {
-        starsContainer.classList.remove('opacity-0', 'pointer-events-none');
-        starsContainer.classList.add('opacity-100', 'pointer-events-auto');
-      }
     }
 
     document.getElementById('btnCloseLetter').addEventListener('click', closeVintageLetter);
-    document.getElementById('btnMusicToggle').addEventListener('click', toggleMusic);
-    document.getElementById('btnCloseStarWish').addEventListener('click', closeStarWish);
-    document.getElementById('starWishModal').addEventListener('click', (e) => {
-      if (e.target === document.getElementById('starWishModal')) closeStarWish();
-    });
 
-    window.addEventListener('resize', () => {
-      initScene();
-      initLuckyStars();
-    });
-
+    window.addEventListener('resize', initScene);
     window.onload = () => {
       initScene();
-      initLuckyStars();
       requestAnimationFrame(animate);
     };
   </script>
